@@ -56,7 +56,7 @@ python createBallModel.py
 1.  テスト
 
 ```
-python findBall.py
+python findBallClass.py
 >> [1,2] # class1,class2にボールがあった
 ```
 
