@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>しきい値調整</title>
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+  <div class="container">
+    <p>color.iniのyellowで[明度min,max,彩度min,max,明度min,max]に変更すれば反映されます</p>
+    <p>その後createBallModel.pyは実行しないで下さい(findBall.pyのみ)</p>
+  </div>
+  <div class="container">
+    <div class="img-h">
+      <h2>色相</h2>
+      <img class="h"/>
+      <label for="">min</label>
+      <input class="h" type="number" value="0" min="0"  max="255" step="1" name="h-min" />
+      <label for="">max</label>
+      <input class="h" type="number" value="20" min="0"  max="255" step="1" name="h-max" />
+    </div>
+    <div class="img-s">
+      <h2>彩度</h2>
+      <img class="s"/>
+      <label for="">min</label>
+      <input class="s"  type="number" value="150" min="0"  max="255" step="1" name="s-min" />
+      <label for="">max</label>
+      <input class="s" type="number" value="230" min="0"  max="255" step="1" name="s-max" />
+    </div>
+    <div class="img-v">
+      <h2>明度</h2>
+      <img class="v"/>
+      <label for="">min</label>
+      <input class="v" type="number" value="30" min="0"  max="255" step="1" name="v-min"/>
+      <label for="">max</label>
+      <input class="v" type="number" value="45" min="0"  max="255" step="1" name="v-max"/>
+    </div>
+  </div>
+  <script src="dist/bundle.min.js"></script>
+</body>
+</html>
